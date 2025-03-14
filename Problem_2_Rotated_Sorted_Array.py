@@ -1,5 +1,5 @@
-// Time Complexity : 
-// Space Complexity :
+// Time Complexity : O(log n)
+// Space Complexity : O(1)
 // Did this code successfully run on Leetcode : Yes
 // Any problem you faced while coding this : No
 
@@ -13,7 +13,7 @@ class Solution:
         l = 0
         r = n - 1
 
-        # Step 1: Find the index of the smallest element using binary search 
+        # Step 1: Find the index of the smallest element (the index where the next element is smaller than the current element) using binary search 
         # (that would denote the position where the array is supposed to begin)
         while l < r:
             mid = (l + r) // 2
